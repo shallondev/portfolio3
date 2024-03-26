@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const observer = new IntersectionObserver(elementInView, options);
 
     // Select all project cards and headings to observe
-    const elementsToObserve = document.querySelectorAll('.project-card, h1, .border-b, a, button, img, #hero-detail, form');
+    const elementsToObserve = document.querySelectorAll('.project-card, h1, .border-b, a, button, img, #hero-detail, #form-info');
 
     // Start observing each element
     elementsToObserve.forEach(element => {
