@@ -8,6 +8,9 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
     <!-- Linking the script -->
     <script src="script.js"></script>
 </head>
@@ -15,72 +18,111 @@
     <!-- Hero -->
     <section id="hero">
         <div class="bg-gray-900 min-h-screen flex items-center">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center h-full">
+            <div class="max-w-7x1 mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center h-full">
               <div class="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-                <h1 class="text-4xl font-bold text-white mb-4">Hi, I'm Shallon. Your next developer.</h1>
-                <p class="text-xl text-gray-300 mb-8">Showcasing my work and skills</p>
-                <a href="#project" 
-                    class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block mr-2">
-                    View Portfolio
-                </a>
-                <a href="#project" 
-                    class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block">
-                    View Portfolio
-                </a>
+                <h1 class="text-4xl font-bold text-white mb-4 hide">Hi, I'm Shallon. Your next developer.</h1>
+                <div id="hero-detail" class="hide">
+                    <p class="text-xl text-gray-300 mb-8">Showcasing my work and skills</p>
+                    <a href="#project" 
+                        class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block mr-2">
+                        View Portfolio
+                    </a>
+                    <a href="#contact" 
+                        class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block">
+                        Connect
+                    </a>
+                </div>
             </div>
               <div class="w-full md:w-1/2">
                 <!-- Photo -->
-                <img src="me.jpg" alt="Your Photo" class="mx-auto rounded-lg shadow-lg h-full">
+                <img src="me.jpg" alt="Your Photo" class="hide mx-auto rounded-lg shadow-lg h-full">
               </div>
             </div>
           </div>          
     </section>
     
     <!-- Projects -->
-    <section id="project" class="bg-gray-900 h-screen"> 
+    <section id="project" class="bg-gray-900 lg:flex-grow min-h-screen"> 
         <div class="container mx-auto px-4 py-20">
-            <h1 class="text-4xl font-bold text-white mb-8">Projects</h1>
-            <div class="border-b border-gray-500 mb-8"></div>
+            <h1 class="text-4xl font-bold text-white mb-8 hide">Projects</h1>
+            <div class="border-b border-gray-500 mb-8 hide"></div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
                 <!-- Project 1 -->
-                <div class="bg-gray-800 border border-gray-500 px-4 py-4">
-                    <img src="flag.jpg" alt="Project 1" class="rounded-t-lg w-full h-64 object-cover transform transition-transform hover:scale-105 inline-block hover:cursor-pointer">
-                    <div class="p-4">
-                        <h2 class="text-lg font-semibold mb-2 text-white">Project 1 Title</h2>
-                        <p class="text-gray-300 mb-4">Project 1 Details Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#" 
-                            class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block">
-                            View Project
+                <div class="project-card hide" data-index="0">
+                    <div class="bg-gray-800 border border-gray-500 px-4 py-4">
+                        <a href="https://guesstheflaggame.netlify.app/" target="_blank">
+                            <img src="flag.jpg" alt="Project 1" class="rounded-t-lg w-full h-64 object-cover transform transition-transform hover:scale-105 inline-block hover:cursor-pointer">
                         </a>
+                        <div class="p-4">
+                            <h2 class="text-lg font-semibold mb-2 text-white">Project 1 Title</h2>
+                            <p class="text-gray-300 mb-4">Project 1 Details Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="https://guesstheflaggame.netlify.app/" target="_blank"
+                                class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block">
+                                View Project
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!-- Project 2 -->
-                <div class="bg-gray-800 border border-gray-500 px-4 py-4">
-                    <img src="form.jpg" alt="Project 2" class="rounded-t-lg w-full h-64 object-cover transform transition-transform hover:scale-105 inline-block hover:cursor-pointer">
-                    <div class="p-4">
-                        <h2 class="text-lg font-semibold mb-2 text-white">Project 2 Title</h2>
-                        <p class="text-gray-300 mb-4">Project 2 Details Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#" 
-                            class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block">
-                            View Project
+                <div class="project-card hide" data-index="1">
+                    <div class="bg-gray-800 border border-gray-500 px-4 py-4">
+                        <a href="https://multi-form-shallon.netlify.app/" target="_blank">
+                            <img src="form.jpg" alt="Project 1" class="rounded-t-lg w-full h-64 object-cover transform transition-transform hover:scale-105 inline-block hover:cursor-pointer">
                         </a>
+                        <div class="p-4">
+                            <h2 class="text-lg font-semibold mb-2 text-white">Project 1 Title</h2>
+                            <p class="text-gray-300 mb-4">Project 1 Details Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="https://multi-form-shallon.netlify.app/" target="_blank" 
+                                class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block">
+                                View Project
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!-- Project 3 -->
-                <div class="bg-gray-800 border border-gray-500 px-4 py-4">
-                    <img src="frog.jpg" alt="Project 3" class="rounded-t-lg w-full h-64 object-cover transform transition-transform hover:scale-105 inline-block hover:cursor-pointer">
-                    <div class="p-4">
-                        <h2 class="text-lg font-semibold mb-2 text-white">Project 3 Title</h2>
-                        <p class="text-gray-300 mb-4">Project 3 Details Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#" 
-                            class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block">
-                            View Project
-                        </a>
+                <div class="project-card hide" data-index="2">
+                    <div class="bg-gray-800 border border-gray-500 px-4 py-4">
+                        <a href="https://sticker-fenn.netlify.app/" target="_blank">
+                            <img src="frog.jpg" alt="Project 1" class="rounded-t-lg w-full h-64 object-cover transform transition-transform hover:scale-105 inline-block hover:cursor-pointer">
+                        </a> 
+                        <div class="p-4">
+                            <h2 class="text-lg font-semibold mb-2 text-white">Project 1 Title</h2>
+                            <p class="text-gray-300 mb-4">Project 1 Details Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="https://sticker-fenn.netlify.app/" target="_blank" 
+                                class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block">
+                                View Project
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
     </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-gray-900 min-h-screen pt-20">
+        <div class="container mx-auto px-4">
+            <form action="#" method="post" class="max-w-8xl mx-auto hide">
+                <h1 class="text-3xl font-semibold text-white mb-6">Contact Me</h1>
+                <div class="border-b border-gray-500 mb-8 hide"></div>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-400 mb-2">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-400 mb-2">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-400 mb-2">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="4" class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" 
+                    class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>    
 </body>
 </html>
