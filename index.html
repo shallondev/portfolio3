@@ -135,7 +135,8 @@
     <!-- Contact -->
     <section id="contact" class="bg-gray-900 min-h-screen pt-20">
         <div class="container mx-auto px-4">
-            <form name="contact" method="POST" data-netlify="true" onSubmit="submit" class="max-w-8xl mx-auto">
+            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit="submit" class="max-w-8xl mx-auto">
+                <input name="bot-field" class="hidden">
                 <h1 class="text-3xl font-semibold text-white mb-6 hide">Contact Me</h1>
                 <div class="border-b border-gray-500 mb-8 hide"></div>
                 <div id="form-info" class="hide">
