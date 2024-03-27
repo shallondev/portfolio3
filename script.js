@@ -38,20 +38,4 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(element);
     });
 
-    // Get the modal
-    const modal = document.getElementById("myModal");
-
-    // Get the <span> element that closes the modal
-    const span = document.querySelector(".close");
-
-    // When the user submits the form, show the modal
-    function onSubmit() {
-    modal.classList.remove("hidden");
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-    modal.classList.add("hidden");
-    }
-
 });
