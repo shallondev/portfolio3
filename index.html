@@ -13,36 +13,31 @@
 
     <!-- Linking the script -->
     <script src="script.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e308f5f709.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-gray-900">
     <!-- Hero -->
     <section id="hero">
         <div class="bg-gray-900 min-h-screen flex items-center">
             <div class="max-w-7x1 mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center h-full">
               <div class="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-                <h1 class="text-4xl font-bold text-gray-100 mb-4 hide lg:px-24">Hi, I'm Shallon,
+                <h1 class="xl:text-4xl text-4xl font-semibold text-gray-100 mb-4 hide lg:px-24">Hi, I'm Shallon,
                     <br class="xl:hidden block"> 
-                    <span class="text-purple-500">Your next developer.</span>
+                    <span class="text-teal-400">Your next software developer.</span>
                 </h1>
                 <div id="hero-detail" class="hide lg:px-24">
-                    <p class="text-xl text-gray-300 font-semibold mb-8 xl:block hidden">
-                        I'm a full-stack developer with a background in mathematics and customer service. 
-                        While studying mathematics at the University of Guelph, I found myself drawn to coding, inspired by creators like Chris Sawyer and Concerned Ape. 
-                        Their ability to craft immersive experiences through lines of code fueled my desire to pursue software development. 
-                        Today, I leverage my diverse experiences to build functional and aesthetically pleasing applications, 
-                        merging my passion for problem-solving and creative expression into tangible solutions.
-                    </p>
+                    <h2 class="xl:text-2xl text-xl text-gray-100 font-medium mb-8">
+                        Whether you need a new team member or websites, armed with my expertise in providing web solutions and technical prowess to back it up, I am here to help you achieve the results you deserve.
+                    </h2>
                     <a href="#project" 
-                        class="border border-purple-500 bg-purple-500 text-white hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block mr-2 mb-4">
-                        My Projects
+                        class="border border-purple-500 bg-purple-500 text-white hover:text-white font-bold py-3 xl:px-8 px-4 shadow-lg transform transition-transform hover:scale-105 inline-block mr-2 mb-4">
+                        My Work
                     </a>
                     <a href="#contact" 
-                        class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block mr-2 mb-4">
-                        Contact Me
-                    </a>
-                    <a href="shallon-f-pawlickpotts-resume-mar26.pdf" target="_blank" 
-                        class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block">
-                        My Resume
+                        class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 xl:px-8 px-4 shadow-lg transform transition-transform hover:scale-105 inline-block mr-2 mb-4">
+                        Get in Touch!
                     </a>
                 </div>
             </div>
@@ -60,9 +55,9 @@
     </section>
     
     <!-- Projects -->
-    <section id="project" class="bg-gray-900 lg:flex-grow min-h-screen"> 
+    <section id="project" class="lg:flex-grow min-h-screen"> 
         <div class="container mx-auto px-4 py-20">
-            <h1 class="text-4xl font-bold text-gray-100 mb-8 hide">Projects</h1>
+            <h1 class="text-4xl font-semibold text-gray-100 mb-8 hide">My Work</h1>
             <div class="border-b border-gray-500 mb-8 hide"></div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
                 <!-- Project 1 -->
@@ -72,17 +67,21 @@
                             <img src="flag.jpg" alt="Project 1" class="rounded-t-lg w-full h-64 object-cover transform transition-transform hover:scale-105 inline-block hover:cursor-pointer">
                         </a>
                         <div class="p-4">
-                            <h2 class="text-lg font-bold mb-4 text-gray-100">Guess the Flag</h2>
-                            <p class="text-gray-300 mb-8 font-semibold">
+                            <h2 class="text-lg font-semibold mb-4 text-gray-100">Educational Flag Guessing Game</h2>
+                            <p class="text-gray-300 mb-8 font-medium">
                                 A game were you guess the flag based on the country displayed.
                                 Utilizes REST Countires API.
-                                <br><br>
-                                <span class="text-purple-500 font-bold">Tech: </span>
-                                HTML, TailwindCSS, JavaScript
+                                <br><br><br>
+                                <span class="text-teal-400 font-semibold">Tech: </span>
+                                HTML, TailwindCSS, JavaScript.
                             </p>
                             <a href="https://guesstheflaggame.netlify.app/" target="_blank"
-                                class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block">
-                                Live Demo
+                                class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-4 shadow-lg transform transition-transform hover:scale-105 inline-block">
+                                Visit <i class="fas fa-hand-pointer"></i>
+                            </a>
+                            <a href="https://github.com/shallondev/multi-step-form" target="_blank"
+                                class="ml-1 border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-4 shadow-lg transform transition-transform hover:scale-105 inline-block">
+                                GitHub <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
@@ -94,19 +93,44 @@
                             <img src="form.jpg" alt="Project 1" class="rounded-t-lg w-full h-64 object-cover transform transition-transform hover:scale-105 inline-block hover:cursor-pointer">
                         </a>
                         <div class="p-4">
-                            <h2 class="text-lg font-bold mb-4 text-gray-100">Multi-Step-Form Interface</h2>
-                            <p class="text-gray-300 mb-4 mb-8 font-semibold">
-                                A web app where users fill out an advanced multi-step form, allowing them to traverse forwards and backwards and change previous responses. 
-                                Other features include visual cues for invalid responses, 
-                                graceful error handling, calculating the price based on the users' inputs, and advanced summarization of the plan made by the user.
+                            <h2 class="text-lg font-semibold mb-4 text-gray-100">Interactive Multi-Step-Form</h2>
+                            <p class="text-gray-300 mb-4 mb-8 font-medium">
+                                A web app where users fill out an advanced multi-step form, 
+                                calculating the price based on the users' inputs, and providing a summarization of the plan made by the user.
                                 <br><br>
-                                <span class="text-purple-500 font-bold">Tech: </span>
-                                HTML, TailwindCSS, JavaScript
+                                <span class="text-teal-400 font-semibold">Tech: </span>
+                                HTML, TailwindCSS, JavaScript.
                             </p>
                             </p>
                             <a href="https://multi-form-shallon.netlify.app/" target="_blank" 
-                                class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block">
-                                Live Demo
+                                class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-4 shadow-lg transform transition-transform hover:scale-105 inline-block">
+                                Visit <i class="fas fa-hand-pointer"></i>
+                            </a>
+                            <a href="https://github.com/shallondev/flag-game" target="_blank"
+                                class="ml-1 border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-4 shadow-lg transform transition-transform hover:scale-105 inline-block">
+                                GitHub <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- My Job Board -->
+                <div class="project-card hide" data-index="0">
+                    <div class="bg-gray-800 border border-gray-500 px-4 py-4 flex flex-col h-full">
+                        <a href="https://guesstheflaggame.netlify.app/" target="_blank">
+                            <img src="jobs.JPG" alt="Project 1" class="rounded-t-lg w-full h-64 object-cover transform transition-transform hover:scale-105 inline-block hover:cursor-pointer">
+                        </a>
+                        <div class="p-4">
+                            <h2 class="text-lg font-semibold mb-4 text-gray-100">My Job Board</h2>
+                            <p class="text-gray-300 mb-8 font-medium">
+                                A job board site where employers can post detailed ads and review applications. 
+                                Job seekers can view ads and submit applications including uploading their resume/conver letter.
+                                <br><br>
+                                <span class="text-teal-400 font-semibold">Tech: </span>
+                                HTML, CSS, Bootstrap, JavaScript, Python, Django.
+                            </p>
+                            <a href="https://github.com/shallondev/myjobboard" target="_blank"
+                                class="ml-1 border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-4 shadow-lg transform transition-transform hover:scale-105 inline-block">
+                                GitHub <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
@@ -118,17 +142,37 @@
                             <img src="frog.jpg" alt="Project 1" class="rounded-t-lg w-full h-64 object-cover transform transition-transform hover:scale-105 inline-block hover:cursor-pointer">
                         </a> 
                         <div class="p-4">
-                            <h2 class="text-lg font-bold mb-4 text-gray-100">Frog Stickers!</h2>
-                            <p class="text-gray-300 mb-8 font-semibold">
-                                A game were you guess the flag based on the country displayed.
-                                Utilizes REST Countires API.
-                                <br><br>
-                                <span class="text-purple-500 font-bold">Tech: </span>
-                                HTML, CSS
+                            <h2 class="text-lg font-semibold mb-4 text-gray-100">Frog Sticker Website</h2>
+                            <p class="text-gray-300 mb-8 font-medium">
+                                A landing page showcasing sticker designs.
+                                <br><br><br><br>
+                                <span class="text-teal-400 font-semibold">Tech: </span>
+                                HTML, CSS.
                             </p>
                             <a href="https://sticker-fenn.netlify.app/" target="_blank"
-                                class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block">
-                                Live Demo
+                                class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-4 shadow-lg transform transition-transform hover:scale-105 inline-block">
+                                Visit <i class="fas fa-hand-pointer"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--Commerce Auction App -->
+                <div class="project-card hide" data-index="0">
+                    <div class="bg-gray-800 border border-gray-500 px-4 py-4 flex flex-col h-full">
+                        <a href="https://guesstheflaggame.netlify.app/" target="_blank">
+                            <img src="commerce.JPG" alt="Project 1" class="rounded-t-lg w-full h-64 object-cover transform transition-transform hover:scale-105 inline-block hover:cursor-pointer">
+                        </a>
+                        <div class="p-4">
+                            <h2 class="text-lg font-semibold mb-4 text-gray-100">E-commmerce Auction Site</h2>
+                            <p class="text-gray-300 mb-8 font-medium">
+                                Applications where authenticated users can create listings, make bids on listings, write comments, and add listings to their watchlist.
+                                <br><br>
+                                <span class="text-teal-400 font-semibold">Tech: </span>
+                                HTML, CSS, Bootstrap, Python, Django.
+                            </p>
+                            <a href="https://github.com/shallondev/web50-projects" target="_blank"
+                                class="ml-1 border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-4 shadow-lg transform transition-transform hover:scale-105 inline-block">
+                                GitHub <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
@@ -154,15 +198,15 @@
                 <div id="form-info" class="hide">
                     <div class="mb-4">
                         <label for="name" class="block text-gray-400 mb-2">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring focus:ring-purple-500">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring focus:ring-teal-400">
                     </div>
                     <div class="mb-4">
                         <label for="email" class="block text-gray-400 mb-2">Your Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring focus:ring-purple-500">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring focus:ring-teal-400">
                     </div>
                     <div class="mb-4">
                         <label for="message" class="block text-gray-400 mb-2">Your Message</label>
-                        <textarea id="message" name="message" placeholder="Enter your message" rows="4" class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring focus:ring-purple-500"></textarea>
+                        <textarea id="message" name="message" placeholder="Enter your message" rows="4" class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring focus:ring-teal-400"></textarea>
                     </div>
                     <button type="submit" 
                         class="border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 px-8 shadow-lg transform transition-transform hover:scale-105 inline-block">
