@@ -1,0 +1,1 @@
+1. Need to fix background issues with horizontal view on mobile
