@@ -49,7 +49,7 @@
                         Shallon
                     </span>    
                     <br>
-                    <span class="border-b-2 border-teal-500">Your next software developer.</span>
+                    <span class="border-b-2 border-teal-500" id="typing-text"></span>
                 </h1>
                 <div id="hero-detail" class="mt-20">
                     <p class="lg:text-2xl text-xl text-gray-300 leading-7 w-5/6 mb-8">
@@ -181,53 +181,70 @@
     </section>
 
     <!-- about -->
-    <section id="about" class="bg-gray-950 min-h-screen lg:p-20 pb-10 hidden"> <!-- Under Construction -->
+    <section id="about" class="hidden bg-gray-950 min-h-screen lg:p-20 pb-10"> <!-- Under Construction -->
         
         <!-- Header -->
-        <div class="flex lg:flex-row flex-col items-center justify-between xl:mb-20 mb-10">
-            <h1 class="text-6xl font-semibold text-gray-50 lg:ml-20 lg:mt-0 mt-10">What I Bring</h1>
-            <div class="lg:mr-20 lg:mt-0 mt-10">
+        <div class="flex items-center justify-between lg:mb-20 lg:px-0 px-5">
+            <h1 class="lg:text-6xl text-4xl font-semibold text-gray-50 lg:ml-20 lg:mb-0 mb-10 lg:mt-0 mt-10">My Work</h1>
+            <div class="lg:mr-20"> <!-- Hidden since section is not finished yet -->
                 <a href="#project" 
-                        class="lg:text-2xl text-xl border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 xl:px-8 px-4 shadow-lg transform transition-transform hover:scale-105 inline-block mr-2">
-                        My Portfolio
+                        class="lg:text-2xl border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 xl:px-8 px-4 shadow-lg transform transition-transform hover:scale-105 inline-block mr-2">
+                        My Work
                     </a>
                 <a href="#contact" 
-                    class="lg:text-2xl text-xl border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 xl:px-8 px-4 shadow-lg transform transition-transform hover:scale-105 inline-block mr-2">
+                    class="lg:text-2xl border border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white font-bold py-3 xl:px-8 px-4 shadow-lg transform transition-transform hover:scale-105 inline-block mr-2">
                     Get in Touch
                 </a>
             </div>
         </div>
 
-        <!-- Skills -->
-        <div class="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-10 ml-20 md:pl-10 pr-10">
-            <h3 class="text-5xl font-semibold text-gray-50">HTML5
-                <i class="fab fa-html5 text-teal-500"></i>
-            </h3>
-            <h3 class="text-5xl font-semibold text-gray-50">CSS3
-                <i class="fab fa-css3-alt text-teal-500"></i>
-            </h3>
-            <h3 class="text-5xl font-semibold text-gray-50">JavaScript
-                <i class="fab fa-js text-teal-500"></i>
-            </h3>
-            <h3 class="text-5xl font-semibold text-gray-50">Python
-                <i class="fab fa-python text-teal-500"></i>
-            </h3>
-            <h3 class="text-5xl font-semibold text-gray-50">Tailwind CSS
-                <i class="fas fa-wind text-teal-500"></i>
-            </h3>
-            <h3 class="text-5xl font-semibold text-gray-50">Bootstrap
-                <i class="fab fa-bootstrap text-teal-500"></i>
-            </h3>
-            <h3 class="text-5xl font-semibold text-gray-50">Django
-                <i class="fas fa-laptop-code text-teal-500"></i>
-            </h3>
-            <h3 class="text-5xl font-semibold text-gray-50">Accessibility
-                <i class="fas fa-universal-access text-teal-500"></i>
-            </h3>
-            <h3 class="text-5xl font-semibold text-gray-50">Responsive
-                <i class="fas fa-mobile-alt text-teal-500"></i>
-            </h3>
+        <div class="ml-10 mr-10 md:pl-10">
+
+            <!-- Skills -->
+            <h2 class="lg:text-4xl text-2xl font-semibold mb-6 text-gray-100">Skills</h2>
+            <div class="grid lg:grid-cols-4 grid-cols-3 lg:gap-6 gap-4">
+                <div class="text-center">
+                    <h3 class="lg:text-2xl font-semibold text-gray-200">HTML5</h3>
+                    <i class="fab fa-html5 text-teal-500 text-3xl"></i>
+                </div>
+                <div class="text-center">
+                    <h3 class="lg:text-2xl font-semibold text-gray-200">CSS3</h3>
+                    <i class="fab fa-css3-alt text-teal-500 text-3xl"></i>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-semibold text-gray-200">JavaScript</h3>
+                    <i class="fab fa-js text-teal-500 text-3xl"></i>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-semibold text-gray-200">Python</h3>
+                    <i class="fab fa-python text-teal-500 text-3xl"></i>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-semibold text-gray-200">Tailwind CSS</h3>
+                    <i class="fas fa-wind text-teal-500 text-3xl"></i>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-semibold text-gray-200">Bootstrap</h3>
+                    <i class="fab fa-bootstrap text-teal-500 text-3xl"></i>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-semibold text-gray-200">Django</h3>
+                    <i class="fas fa-laptop-code text-teal-500 text-3xl"></i>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-semibold text-gray-200">Accessibility</h3>
+                    <i class="fas fa-universal-access text-teal-500 text-3xl"></i>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-semibold text-gray-200">Responsive</h3>
+                    <i class="fas fa-mobile-alt text-teal-500 text-3xl"></i>
+                </div>
+            </div>
+
+            <!-- Resume style -->
+            <h2 class="lg:text-4xl text-2xl font-semibold mb-6 text-gray-100 mt-20">Skills</h2>
         </div>
+
         
     </section>
 
@@ -282,4 +299,23 @@
     </section>
 
 </body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const text = "Your next software developer."; // Text you want to animate
+    const delay = 100; // Delay between each character in milliseconds
+
+    let index = 0;
+    const typeText = () => {
+      document.getElementById('typing-text').textContent = text.slice(0, index);
+      index++;
+      if (index <= text.length) {
+        setTimeout(typeText, delay);
+      }
+    };
+
+    typeText();
+  });
+</script>
+
 </html>
